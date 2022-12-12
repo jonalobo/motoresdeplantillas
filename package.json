@@ -1,0 +1,26 @@
+{
+  "name": "motoresdeplantillas",
+  "version": "1.0.0",
+  "description": "Tarea 5 coderhouse",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonalobo/motoresdeplantillas.git"
+  },
+  "keywords": [
+    "coderhouse"
+  ],
+  "author": "Jonathan Alvarado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonalobo/motoresdeplantillas/issues"
+  },
+  "homepage": "https://github.com/jonalobo/motoresdeplantillas#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0"
+  }
+}
