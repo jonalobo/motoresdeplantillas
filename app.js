@@ -1,6 +1,8 @@
 const express = require("express");
+require('dotenv').config()
 
 const app = express();
+const PORT = process.env.PORT
 
 const hbs = require("hbs");
 const { ruta } = require("./routes/rutaIngresar");
@@ -15,6 +17,6 @@ app.use(express.static("public"));
 
 app.use("/", ruta);
 
-app.listen("3000", () => {
-  console.log("servidor en linea");
+app.listen(PORT, () => {
+  console.log(`servidor en linea en el puerto ${PORT}`);
 });
