@@ -6,8 +6,8 @@ btn.addEventListener("click", (e) => {
   e.preventDefault();
 
   const nombre = entradas[0].value;
-  const precio = entradas[0].value;
-  const imagen = entradas[0].value;
+  const precio = entradas[1].value;
+  const imagen = entradas[2].value;
 
   if (nombre != "" && precio != "" && imagen != "") {
     // Ejemplo implementando el metodo POST:

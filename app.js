@@ -2,6 +2,8 @@ const express = require("express");
 require('dotenv').config()
 
 const app = express();
+//Express.json es fundamental para leer el contenido en el body de la request
+app.use(express.json())
 const PORT = process.env.PORT
 
 const hbs = require("hbs");
