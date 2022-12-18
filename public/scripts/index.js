@@ -1,4 +1,5 @@
 const btn = document.getElementById("btnIngresar");
+const btnVer = document.getElementById("btnVer");
 
 const entradas = document.querySelectorAll("input");
 
@@ -29,10 +30,15 @@ btn.addEventListener("click", (e) => {
       return response.json(); // parses JSON response into native JavaScript objects
     }
 
-    postData("http://localhost:3000/productos", { nombre, precio, imagen }).then((data) => {
+    postData("http://localhost:3030/productos", { nombre, precio, imagen }).then((data) => {
       console.log(data); // JSON data parsed by `data.json()` call
     });
   } else {
     alert('Todos los espacios deben tener información')
   }
 });
+
+btnVer.addEventListener('click',(e)=>{
+  e.preventDefault()
+  window.location.href = "http://localhost:3030/verproductos"
+})

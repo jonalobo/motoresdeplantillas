@@ -35,10 +35,33 @@ input {
     border-radius: 1px;
 }
 #btnIngresar {
-    position: relative;
-    top: 20px;
-    right: 140px;
     color: white;
     font-weight: bold;
-    background-color: rgb(9, 170, 38);
+    background-color: rgb(170, 205, 177);
+}
+.contenedor-btn {
+    margin-top: 10px;
+    width: 325px;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.tabla {
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+}
+.tablaUno {
+    border: 1px solid black;
+}
+.tablaUno th {
+    border: 1px solid black;
+}
+.tablaUno td{
+    border: 1px solid black;
+}
+.contenedor_tabla {
+    min-width: 375px;
+    min-height: 550px;
+    background-color: rgb(204, 204, 204);
 }

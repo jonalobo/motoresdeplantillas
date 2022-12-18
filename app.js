@@ -1,9 +1,11 @@
 const express = require("express");
 require('dotenv').config()
+const cors = require('cors')
 
 const app = express();
 //Express.json es fundamental para leer el contenido en el body de la request
 app.use(express.json())
+app.use(cors())
 const PORT = process.env.PORT
 
 const hbs = require("hbs");
