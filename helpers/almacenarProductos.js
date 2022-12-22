@@ -5,4 +5,7 @@ const agregarProducto = (data) => {
     console.log(productos)
 }
 
-module.exports = agregarProducto
+module.exports = {
+    agregarProducto,
+    productos
+}

@@ -3,8 +3,7 @@ const btnVer = document.getElementById("btnVer");
 
 const entradas = document.querySelectorAll("input");
 
-btn.addEventListener("click", (e) => {
-  e.preventDefault();
+btn.addEventListener("click", () => {
 
   const nombre = entradas[0].value;
   const precio = entradas[1].value;

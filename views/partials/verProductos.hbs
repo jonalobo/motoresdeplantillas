@@ -1,3 +1,9 @@
 <div class="contenedor_tabla">
-    
+    {{#if existe }}
+        <ul>
+            {{#each productos}}
+            <li>{{productos.nombre}}</li>
+            {{/each}}  
+        </ul>
+    {{/if}}
 </div>
