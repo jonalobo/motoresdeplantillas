@@ -29,9 +29,7 @@ btn.addEventListener("click", () => {
       return response.json(); // parses JSON response into native JavaScript objects
     }
 
-    postData("http://localhost:3030/productos", { nombre, precio, imagen }).then((data) => {
-      console.log(data); // JSON data parsed by `data.json()` call
-    });
+    postData("http://localhost:3000/productos", { nombre, precio, imagen })
   } else {
     alert('Todos los espacios deben tener información')
   }
@@ -39,5 +37,5 @@ btn.addEventListener("click", () => {
 
 btnVer.addEventListener('click',(e)=>{
   e.preventDefault()
-  window.location.href = "http://localhost:3030/verproductos"
+  window.location.href = "http://localhost:3000/verproductos"
 })

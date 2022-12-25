@@ -65,3 +65,7 @@ input {
     min-height: 550px;
     background-color: rgb(204, 204, 204);
 }
+.link {
+    color: blue;
+    text-decoration: underline;
+}

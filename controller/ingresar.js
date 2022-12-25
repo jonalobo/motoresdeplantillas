@@ -6,7 +6,7 @@ const ingresarProducto = (req,res=response)=>{
 }
 const verProductos = (req,res=response)=>{
     console.log(productos)
-    res.render('consultar',{productos, existe:true})
+    res.render('consultar',{productos})
 }
 
 module.exports = {
